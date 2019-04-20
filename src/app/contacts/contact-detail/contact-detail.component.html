@@ -2,20 +2,10 @@
   <mat-card class="example-card" *ngIf="contactInfo">
     <mat-card-content>
       <div class="contacthead">
-        <div mat-card-avatar class="contactimg example-header-image"></div>
         <mat-card-title>{{contactInfo.name}}</mat-card-title>
       </div>
       <!-- socialProfile -->
-      <br />
-      <mat-form-field *ngFor="let phone of contactInfo.phone" class="full readonly">
-        <mat-icon matPrefix>Age</mat-icon>
-        <input matInput placeholder="Age" [disabled]="true" value="{{phone}}">
-      </mat-form-field>
-      <br />
-      <mat-form-field *ngFor="let email of contactInfo.email" class="full readonly">
-        <mat-icon matPrefix>Famille</mat-icon>
-        <input matInput placeholder="Famille" [disabled]="true" value="{{email}}">
-      </mat-form-field>
+      
       <br />
       <mat-form-field class="full readonly">
         <mat-icon matPrefix>image</mat-icon>
@@ -23,14 +13,8 @@
       </mat-form-field>
       <mat-form-field class="full readonly">
           <mat-icon matPrefix>Synopsis</mat-icon>
-          <textarea matInput placeholder="Synopsis" [disabled]="true" value="{{contactInfo.photoUrl}}"></textarea>
+          <textarea matInput placeholder="Synopsis" [disabled]="true" value="{{contactInfo.synopsis}}"></textarea>
         </mat-form-field>
-      <mat-form-field class="full readonly">
-        <mat-icon matPrefix>Synopsis</mat-icon>
-        <input matInput [matDatepicker]="picker" [disabled]="true" [(ngModel)]="contactInfo.birthday" placeholder="Nourriture">
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
       <mat-form-field class="full readonly">
       </mat-form-field>
     </mat-card-content>

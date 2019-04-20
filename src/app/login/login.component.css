@@ -1,0 +1,15 @@
+.yay {
+    background-image: url('https://besthqwallpapers.com/Temp/20-4-2019/dororo-and-hyakkimaru-wheat-field-dororo-characters-hyakkimaru-teosamu-zuka-besthqwallpapers.com-1920x1080.jpg');
+    margin-top: -10px;
+}
+.account-container{
+    height: 1030px;
+}
+.example-card {
+    height: 95%;
+    display: inline-grid;
+}
+.title {
+    text-align: center;
+    display: block;
+}
