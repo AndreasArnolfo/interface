@@ -1,0 +1,78 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~ngx-toastr/toastr.css';
+body{
+  margin: 0;
+}
+.fullwidth{
+    width:100%
+}
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  .account-container{
+    max-width: 340px;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .mat-form-field-infix{
+    margin-left: 4px;
+  }
+  .account-container .mat-card-title{
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .validation-message{
+    font-size: 12px;
+    text-align: left;
+    padding: 2px;
+    color: red;
+  }
+  .example-card {
+    /* max-width: 400px; */
+  }
+  
+  .example-header-image {
+    background-image: url('http://cdn.onlinewebfonts.com/svg/img_383210.png');
+    background-size: cover;
+  }
+  .full{
+    width: 100%;
+  }
+  .readonly{
+    /* pointer-events: none */
+  }
+  .contactimg{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: inline-block
+  }
+  .contactimg.add{
+    background: gray;
+    margin-bottom: 5px;
+  }
+  .contactimg.add div{
+  margin-top: 11px;
+    color: #fff;
+  }
+  .contacthead{
+    text-align: center
+  }
+  .contactcard{
+    max-width: 410px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .contactbutton{
+    float: right;
+  }
+  .my-drop-zone { border: dotted 3px lightgray; }
+  .nv-file-over { border: dotted 3px red; } /* Default class applied to drop zones on over */
+  .another-file-over-class { border: dotted 3px green; }

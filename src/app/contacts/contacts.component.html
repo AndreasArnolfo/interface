@@ -1,0 +1,31 @@
+<mat-list>
+  <mat-list-item>
+
+    <button [routerLink]="[ '/', 'contactadd']">
+      <p>Add</p>
+    </button>
+  </mat-list-item>
+
+
+
+  <ul row  class="contact-item" *ngFor="let contact of contacts">
+
+    <div class="clash-card barbarian grid-item fonfon" (click)="videoDetailNavigate()">
+      <div class="clash-card__image clash-card__image--barbarian" >
+        <img [src]="contact.photoUrl" alt="barbarian" />
+      </div>
+      <div class="clash-card__unit-name fonfon">
+        {{contact.name}}
+      </div>
+
+
+      <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
+        <div>
+          <button mat-raised-button class="stat-value" [routerLink]="[ '/', 'contacts', contact._id ]" >modifier</button>
+          <button mat-raised-button class="stat-value" (click)="videoDetailNavigate()">voir</button>
+
+        </div>
+      </div>
+    </div> <!-- end clash-card barbarian-->
+  </ul>
+</mat-list>

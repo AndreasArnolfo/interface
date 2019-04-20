@@ -1,0 +1,38 @@
+<div class="contactcard">
+  <mat-card class="example-card">
+    <mat-card-content>
+      <div class="contacthead">
+        <div mat-card-avatar class="contactimg example-header-image"></div>
+        <mat-card-title *ngIf="contactInfo">{{contactInfo.name}}</mat-card-title>
+      </div>
+      <br />
+      <mat-form-field class="full readonly">
+        <input matInput placeholder="Nom" [(ngModel)]="contactInfo.name">
+      </mat-form-field>
+      <br />
+
+      <mat-form-field *ngFor="let email of contactInfo.email;let index = index;trackBy:indexTracker" class="full readonly">
+        <input matInput placeholder="Age" [(ngModel)]="contactInfo.email[index]">
+      </mat-form-field>
+
+      <mat-form-field class="full readonly">
+        <input matInput placeholder="Image Url" [(ngModel)]="contactInfo.photoUrl">
+      </mat-form-field>
+
+      <mat-form-field class="full readonly">
+          <input matInput placeholder="synopsis" [(ngModel)]="contactInfo.synopsis">
+        </mat-form-field>
+      <br />
+      <mat-form-field class="full readonly">
+        <input matInput [(ngModel)]="contactInfo.birthday" placeholder="Nourriture">
+      </mat-form-field>
+      <br />
+      <mat-form-field class="full readonly">
+
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="saveContact()" color="primary">Save</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,43 @@
+<div class="account-container">
+        <form novalidate (ngSubmit)="register()" [formGroup]="registerForm" #formDir="ngForm" class="form-group">
+                <mat-card class="example-card">
+                        <mat-card-header>
+                                <mat-card-title>
+                                        s'enregistrer
+                                </mat-card-title>
+                        </mat-card-header>
+
+                        <div class="example-container">
+                                <mat-form-field class="justifier">
+                                        <mat-icon matPrefix>person</mat-icon>
+                                        <input matInput placeholder="Full name" formControlName="name" text="text">
+                                </mat-form-field>
+                                <mat-form-field class="justifier">
+                                        <mat-icon matPrefix>email</mat-icon>
+                                        <input matInput placeholder="Username" formControlName="userName" text="text">
+                                </mat-form-field>
+                                <mat-form-field class="justifier">
+                                        <mat-icon matPrefix>lock</mat-icon>
+                                        <input matInput placeholder="Password" type="password" formControlName="password"
+                                                text="password">
+                                </mat-form-field>
+                                <mat-form-field class="justifier">
+                                        <mat-icon matPrefix>lock</mat-icon>
+                                        <input matInput placeholder="Confirm Password" type="password" formControlName="passwordAgain"
+                                                text="password">
+                                </mat-form-field>
+
+
+                                <button color="primary" type="submit" [disabled]="!registerForm.valid" class="fullwidth"
+                                        mat-raised-button>
+                                        Create Account
+                                </button>
+                                <br />
+                                <button mat-raised-button [routerLink]="[ '/', 'login' ]" class="fullwidth">
+                                        Already have an account? Login here.
+                                </button>
+                        </div>
+                </mat-card>
+        </form>
+
+</div>

@@ -1,0 +1,19 @@
+.logo{
+    margin-right: 10px;
+}
+.logoimg{
+    width: 40px;
+    height: 60px;
+}
+.profilebuttons{
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+}
+.profilebuttons label{
+    padding: 10px;
+    cursor: pointer;
+}
+.menuBg{
+    background-color: #DF7401;
+}
