@@ -46,6 +46,7 @@ export class ContactEditComponent implements OnInit {
         this.contactInfo.phone.push('');
     }
   }
+ 
   indexTracker(index: number, value: any) {
     return index;
   }

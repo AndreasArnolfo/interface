@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {DataService} from "../shared/data.service";
-import {ActivatedRoute, Router} from "@angular/router";
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {DataService} from '../shared/data.service';
+import {ActivatedRoute, Router} from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import {MatSnackBar} from '@angular/material';
 @Component({
@@ -10,7 +10,7 @@ import {MatSnackBar} from '@angular/material';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  loginForm: FormGroup
+  loginForm: FormGroup;
   errorMsg: string;
   successMsg: string;
 
@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
     this.loginForm = new FormGroup({
       username: new FormControl('', [Validators.required, Validators.minLength(1)]),
       password: new FormControl('', [Validators.required, Validators.minLength(6)]),
-    })
+    });
   }
   get username() {
     return this.loginForm.get('username');
@@ -34,12 +34,12 @@ export class LoginComponent implements OnInit {
     });
   }
   login = function () {
-    let userinput = this;
-    var user = {
+    const userinput = this;
+    const user = {
       username: userinput.username.value,
       password: userinput.password.value
     };
-    let body: string = JSON.stringify(user);
+    const body: string = JSON.stringify(user);
     if (!userinput.username.value || !userinput.password.value) {
       this.toastr.error('Please provide a username and a password.');
     } else {
@@ -52,5 +52,5 @@ export class LoginComponent implements OnInit {
           this.openSnackBar('Invalid username or password');
         });
     }
-  }
+  };
 }

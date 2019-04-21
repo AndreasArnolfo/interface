@@ -1,10 +1,14 @@
 <mat-list>
-  <mat-list-item>
 
-    <button [routerLink]="[ '/', 'contactadd']">
-      <p>Add</p>
-    </button>
-  </mat-list-item>
+  <div class="banner">
+    <div class="banner-text">
+      <mat-list-item>
+        <button [routerLink]="[ '/', 'contactadd']">
+          <p>Add</p>
+        </button>
+      </mat-list-item>
+    </div> <!-- end banner-text -->
+</div> <!-- end banner -->
 
   <ul row  class="contact-item" *ngFor="let contact of contacts">
 
@@ -14,6 +18,9 @@
       </div>
       <div class="clash-card__unit-name fonfon">
         {{contact.name}}
+      </div>
+      <div class="clash-card__unit-description">
+        {{contact.adress}}
       </div>
       <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
         <div>

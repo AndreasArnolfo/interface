@@ -1,9 +1,9 @@
 <mat-toolbar class="menuBg">
   <img class="logoimg" src="../../assets/img/logo.png">
-  <span class="logo">Shine</span>
+  <span class="logo">Streaming Friendly</span>
   <button mat-button *ngIf="userObj && userObj.name" [routerLink]="[ '/', 'contacts']">Accueil</button>
   <div class="profilebuttons">
-  <label  *ngIf="userObj && userObj.name">Bienvenue, {{userObj.name}}</label>
+  <label  *ngIf="userObj && userObj.name">Bienvenue, {{userObj.name}}-Sama</label>
   <label  *ngIf="userObj && userObj.name" (click)="logout()">Déconexion</label>
 </div>
 </mat-toolbar>

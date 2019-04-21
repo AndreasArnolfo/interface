@@ -19,7 +19,7 @@
       cursor: pointer;
       display: inline-grid;
       grid-template-columns: auto auto auto;
-      padding: 20px;
+      padding: 40px;
   }
 
 .mynumber{
@@ -27,18 +27,8 @@
   top: 10px; 
 }
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
-.slide-container {
-  margin: auto;
-  width: 600px;
-  text-align: center;
-}
-.wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.wrapper:focus {
-  outline: 0;
-}
+
+
 .clash-card {
   background: white;
   width: 300px;
@@ -115,6 +105,10 @@
   text-transform: uppercase;
   font-weight: 400;
   font-size: 12px;
+  background-color: #DF7401;
+  width: 100%;
+  border-radius: 30px; 
+
 }
 .clash-card__unit-stats .no-border {
   border-right: none;
@@ -136,10 +130,70 @@
   z-index: 999;
 }
 .fonfon {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: #DF7401;
+  background-color: rgb(255, 255, 255);
 }
 img {
   width: 400px;
   height: 575px;
+}
+h2 {
+  font-size: 2em;
+  line-height: 1.25em;
+  margin: 0 0 0.25em 0;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.33em;
+  margin: 0 0 0.33em 0;
+}
+h4 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0 0 0.5em 0;
+}
+p {
+  margin: 0 0 0.5em 0;
+}
+/*---------- UTILITIES ----------*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*---------- BANNER ----------*/
+/* INFO
+ Banner Graphic must be at least the height of .banner + height of parent element (in this case the header)
+ e.g.  .banner { height: 22em }
+ .header { height: 3.5em }
+ 22em + 3.5em = 25.5em
+ 25.5em * 16px = 408px
+ => Banner Graphic must be at least 408px height!
+ Graphic: http://unsplash.com/post/81123587039/download-by-wojtek-witkowski
+ */
+.banner {
+  background: url(https://flipwallpapers.com/wallpapers/anime-wallpapers-background-For-desktop-Wallpaper.jpg) no-repeat fixed 50% 0;
+  height: 22em;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 0% 0% 30% 30%;
+}
+.banner-text {
+  color: #fff;
+  font-size: 1.25em;
+  left: 0;
+  position: absolute;
+  top: 75%;
+  text-align: center;
+  text-shadow: 0 0px 2px rgba(0, 0, 0, .5);
+  width: 100%;
+}
+mat-list {
+  padding-top: 0px;
+  background-color: rgb(254, 248, 248);
 }

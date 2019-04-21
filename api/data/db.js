@@ -6,7 +6,7 @@ var express = require("express");
 
 var server = express();
 
-mongoose.connect('mongodb://localhost:27017/testBDD', { useNewUrlParser: true }, (err) => {
+mongoose.connect('mongodb://localhost:27017/coucou', { useNewUrlParser: true }, (err) => {
     if (!err) { console.log('MongoDB Connection Succeeded.') }
     else { console.log('Error in DB connection : ' + err) }
 });
