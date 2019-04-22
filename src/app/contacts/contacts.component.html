@@ -3,17 +3,18 @@
   <div class="banner">
     <div class="banner-text">
       <mat-list-item>
-        <button [routerLink]="[ '/', 'contactadd']">
-          <p>Add</p>
+        <button mat-raised-button style="background-color: #DF7401; color: aliceblue;"
+          [routerLink]="[ '/', 'contactadd']">
+          Add
         </button>
       </mat-list-item>
     </div> <!-- end banner-text -->
-</div> <!-- end banner -->
+  </div> <!-- end banner -->
 
-  <ul row  class="contact-item" *ngFor="let contact of contacts">
+  <ul row class="contact-item" *ngFor="let contact of contacts">
 
-    <div class="clash-card barbarian grid-item fonfon" (click)="videoDetailNavigate()">
-      <div class="clash-card__image clash-card__image--barbarian" >
+    <div class="clash-card barbarian grid-item fonfon" [routerLink]="[ '/', 'contacts', contact._id ]">
+      <div class="clash-card__image clash-card__image--barbarian">
         <img [src]="contact.photoUrl" alt="barbarian" />
       </div>
       <div class="clash-card__unit-name fonfon">
@@ -24,10 +25,19 @@
       </div>
       <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
         <div>
-          <button mat-raised-button class="stat-value" [routerLink]="[ '/', 'contacts', contact._id ]" >modifier</button>
-
+          <button mat-raised-button class="stat-value" >
+            modifier</button>
         </div>
       </div>
     </div> <!-- end clash-card barbarian-->
   </ul>
+
+
+
 </mat-list>
+<footer>
+  <p class="yoy">
+    site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0 with attribution
+    required. rev 1.0.0.0
+  </p>
+</footer>

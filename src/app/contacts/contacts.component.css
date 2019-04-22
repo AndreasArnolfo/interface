@@ -42,7 +42,7 @@
 }
 .clash-card__image {
   position: relative;
-  height: 500px;
+  height: 200px;
   margin-bottom: 35px;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
@@ -50,12 +50,7 @@
 .clash-card__image--barbarian {
   background: url('../../assets/img/bgCard.jpg');
 }
-.clash-card__image--barbarian img {
-  width: 400px;
-  position: absolute;
-  top: -65px;
-  left: -70px;
-}
+
 .clash-card__level {
   text-transform: uppercase;
   font-size: 12px;
@@ -133,8 +128,12 @@
   background-color: rgb(255, 255, 255);
 }
 img {
-  width: 400px;
-  height: 575px;
+  position: absolute;
+    z-index: 30;
+    width: 150px;
+    height: 220px;
+    left: 25%;
+    bottom: 1%;
 }
 h2 {
   font-size: 2em;
@@ -166,15 +165,7 @@ p {
   clear: both;
 }
 /*---------- BANNER ----------*/
-/* INFO
- Banner Graphic must be at least the height of .banner + height of parent element (in this case the header)
- e.g.  .banner { height: 22em }
- .header { height: 3.5em }
- 22em + 3.5em = 25.5em
- 25.5em * 16px = 408px
- => Banner Graphic must be at least 408px height!
- Graphic: http://unsplash.com/post/81123587039/download-by-wojtek-witkowski
- */
+
 .banner {
   background: url(https://flipwallpapers.com/wallpapers/anime-wallpapers-background-For-desktop-Wallpaper.jpg) no-repeat fixed 50% 0;
   height: 22em;
@@ -196,4 +187,23 @@ p {
 mat-list {
   padding-top: 0px;
   background-color: rgb(254, 248, 248);
+}
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 140px;
+  width: 100%;
+}
+
+
+footer{background:#DF7401;text-align:center;}
+footer a{color:#fff;text-decoration:none; display:inline-block}
+
+@media only screen and (max-width : 769px) {
+footer a{font-size:22px;}
+}
+.yoy {
+padding: 50px;
+color: #fff;
 }

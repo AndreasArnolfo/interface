@@ -1,14 +1,110 @@
-<div class="contactcard">
+<div class="video-playlist-wrap two-col">
+    <div class="player-wrap">
+      <div class="fluid-ratio-wrap">
+        <div class="fluid-ratio-inner">
+<!--           <img style="width: 100%" class="img-responsive" src="http://placehold.it/1600x900">
+ -->      <video width="100%" controls>
+              <source src="mov_bbb.mp4" type="video/mp4">
+              <source src="mov_bbb.ogg" type="video/ogg">
+              Your browser does not support HTML5 video.
+            </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="playlist-wrap">
+      <ul class="remove-bullets scroll-wrap">
+        <li class="playlist-item">
+          <div class="thumb">
+            <div class="fluid-ratio-wrap">
+              <div class="fluid-ratio-inner"></div>
+            </div>
+          </div>
+          <div class="details">Plalist Item 1</div>
+        </li>
+        <li class="playlist-item">
+          <div class="thumb">
+            <div class="fluid-ratio-wrap">
+              <div class="fluid-ratio-inner"></div>
+            </div>
+          </div>
+          <div class="details">Plalist Item 2</div>
+        </li>
+        <li class="playlist-item">
+          <div class="thumb">
+            <div class="fluid-ratio-wrap">
+              <div class="fluid-ratio-inner"></div>
+            </div>
+          </div>
+          <div class="details">Plalist Item 3</div>
+        </li>
+        <li class="playlist-item">
+          <div class="thumb">
+            <div class="fluid-ratio-wrap">
+              <div class="fluid-ratio-inner"></div>
+            </div>
+          </div>
+          <div class="details">Plalist Item 4</div>
+        </li>
+        <li class="playlist-item">
+          <div class="thumb">
+            <div class="fluid-ratio-wrap">
+              <div class="fluid-ratio-inner"></div>
+            </div>
+          </div>
+          <div class="details">Plalist Item 5</div>
+        </li>
+        <li class="playlist-item">
+          <div class="thumb">
+            <div class="fluid-ratio-wrap">
+              <div class="fluid-ratio-inner"></div>
+            </div>
+          </div>
+          <div class="details">Plalist Item 6</div>
+        </li>
+        <li class="playlist-item">
+          <div class="thumb">
+            <div class="fluid-ratio-wrap">
+              <div class="fluid-ratio-inner"></div>
+            </div>
+          </div>
+          <div class="details">Plalist Item 7</div>
+        </li>
+        <li class="playlist-item">
+          <div class="thumb">
+            <div class="fluid-ratio-wrap">
+              <div class="fluid-ratio-inner"></div>
+            </div>
+          </div>
+          <div class="details">Plalist Item 8</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="contactcard">
   <mat-card class="example-card" *ngIf="contactInfo">
-    <mat-card-content>
+    <!-- <mat-card-content>
       <div class="contacthead">
         <mat-card-title>{{contactInfo.name}}</mat-card-title>
       </div>
-      <!-- socialProfile -->
       
       <br />
       <mat-form-field >
-        <mat-icon matPrefix>image</mat-icon>
         <textarea matInput placeholder="Image Url" [disabled]="true" value="{{contactInfo.photoUrl}}"></textarea>
       </mat-form-field>
       <mat-form-field class="full readonly">
@@ -17,11 +113,11 @@
         </mat-form-field>
       <mat-form-field class="full readonly">
       </mat-form-field>
-    </mat-card-content>
+    </mat-card-content> -->
     <mat-card-actions>
       <button mat-raised-button color="primary" [routerLink]="[ '/', 'contactedit', contactInfo._id ]">EDIT</button>
       <button mat-button (click)="deleteContact()">DELETE</button>
     </mat-card-actions>
   </mat-card>
-</div>
+</div> 
 
