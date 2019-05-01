@@ -6,7 +6,6 @@ import { ContactEditComponent } from './contacts/contact-edit/contact-edit.compo
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { VideoDetailComponent } from './video-detail/video-detail.component';
 
 
 const appRoutes: Routes = [
@@ -16,7 +15,6 @@ const appRoutes: Routes = [
   {path: 'contacts',  component: ContactsComponent },
   {path: 'contacts/:id', component: ContactDetailComponent},
   {path: 'contactedit/:id', component: ContactEditComponent},
-  {path: 'videodetail/:id', component: VideoDetailComponent},
   {path: 'contactadd', component: ContactEditComponent},
 ];
 @NgModule({

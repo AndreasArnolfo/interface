@@ -36,7 +36,6 @@ import { MatToolbar,
   MatSelectModule,
   } from '@angular/material';
 import { RegisterComponent } from './register/register.component';
-import { VideoDetailComponent } from './video-detail/video-detail.component';
 
 @NgModule({
   declarations: [
@@ -47,9 +46,7 @@ import { VideoDetailComponent } from './video-detail/video-detail.component';
     ContactEditComponent,
     FilterPipe,
     LoginComponent,
-    RegisterComponent,
-    VideoDetailComponent
-  
+    RegisterComponent,  
 
   ],
   imports: [
