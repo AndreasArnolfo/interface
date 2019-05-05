@@ -36,6 +36,7 @@ import { MatToolbar,
   MatSelectModule,
   } from '@angular/material';
 import { RegisterComponent } from './register/register.component';
+import { DemandeComponent } from './demande/demande.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { RegisterComponent } from './register/register.component';
     ContactEditComponent,
     FilterPipe,
     LoginComponent,
-    RegisterComponent,  
+    RegisterComponent,
+    DemandeComponent,  
 
   ],
   imports: [

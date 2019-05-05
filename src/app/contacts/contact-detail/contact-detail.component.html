@@ -1,5 +1,9 @@
-
+<div class="encap">
+<img class="imageDetails" [src]="contactInfo.photoUrl" alt="Image">
+</div>
 <h1 style="text-align: center;">{{contactInfo.name}}</h1>
+
+<p>{{contactInfo.address}}</p>
 <div class="video-playlist-wrap two-col">
     <div class="player-wrap">
       <div class="fluid-ratio-wrap">
@@ -83,16 +87,7 @@
   </div>
 
 <div *ngIf="contactInfo">
-    
+
     <button mat-raised-button color="primary" [routerLink]="[ '/', 'contactedit', contactInfo._id ]">EDIT</button>
     <button mat-button (click)="deleteContact()">DELETE</button>
 </div>
-
-
-
-
-
-
-
-  
-

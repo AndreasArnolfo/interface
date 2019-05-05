@@ -3,7 +3,7 @@
   <div class="banner">
     <div class="banner-text">
       <mat-list-item>
-        <button mat-raised-button style="background-color: #DF7401; color: aliceblue;"
+        <button mat-raised-button style="background-color: #E5125F; color: aliceblue;"
           [routerLink]="[ '/', 'contactadd']">
           Add
         </button>
@@ -12,23 +12,6 @@
   </div> <!-- end banner -->
 
   <ul row class="contact-item" *ngFor="let contact of contacts">
-
-<!--     <div class="clash-card barbarian grid-item fonfon" [routerLink]="[ '/', 'contacts', contact._id ]">
-      <div class="clash-card__image clash-card__image--barbarian">
-        <img [src]="contact.photoUrl" alt="barbarian" />
-      </div>
-      <div class="clash-card__unit-name fonfon">
-        {{contact.name}}
-      </div>
-      <div class="clash-card__unit-description">
-        {{contact.address}}
-      </div>
-      <div class="clash-card__unit-stats clash-card__unit-stats--barbarian clearfix">
-        <div>
-          <button mat-raised-button class="stat-value" >modifier</button>
-        </div>
-      </div>
-    </div>  -->
     <div class="card">
       <div class="card__inner">
         <div class="card__face card__face--front">
@@ -36,14 +19,11 @@
         </div>
         <div class="card__face card__face--back">
           <h2 class="card__title">{{contact.name}} <span>(2018)</span></h2>
-          <p class="card__content">A failed reporter is bonded to an alien entity, one of many symbiotes who have invaded Earth. But the being takes a liking to Earth and decides to protect it. </p>
+          <p class="card__content">{{contact.address}} </p>
           <a [routerLink]="[ '/', 'contacts', contact._id ]" class="card__cta">Voir</a>
         </div>
       </div>
     </div>
-    
-    
- 
   </ul>
 
 

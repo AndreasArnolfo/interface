@@ -1,8 +1,8 @@
 .example-card {
     /* max-width: 400px; */
   }
-  
- 
+
+
   .full{
     width: 100%;
   }
@@ -195,4 +195,12 @@
   .video-playlist-wrap.two-col .details {
     padding: 0 10px;
   }
-  
+  .imageDetails {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+  }
+  .encap {
+    height: 20%;
+  }

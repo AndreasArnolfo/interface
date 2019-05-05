@@ -6,13 +6,14 @@ import { ContactEditComponent } from './contacts/contact-edit/contact-edit.compo
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-
+import { DemandeComponent } from './demande/demande.component';
 
 const appRoutes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'home', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   {path: 'contacts',  component: ContactsComponent },
+  {path: 'demande',  component: DemandeComponent },
   {path: 'contacts/:id', component: ContactDetailComponent},
   {path: 'contactedit/:id', component: ContactEditComponent},
   {path: 'contactadd', component: ContactEditComponent},

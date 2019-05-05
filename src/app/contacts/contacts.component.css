@@ -2,7 +2,7 @@
     color: rgba(0, 0, 0, 0.54);
   }
   .example-header-image {
-    background-image: url('http://cdn.onlinewebfonts.com/svg/img_383210.png');
+    background-image: url('https://images.alphacoders.com/736/thumb-1920-736461.png');
     background-size: cover;
   }
   .contact-avatar{
@@ -24,7 +24,7 @@
 
 .mynumber{
   margin-left: 50px;
-  top: 10px; 
+  top: 10px;
 }
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
@@ -102,7 +102,7 @@
   font-size: 12px;
   background-color: #DF7401;
   width: 100%;
-  border-radius: 30px; 
+  border-radius: 30px;
 
 }
 .clash-card__unit-stats .no-border {
@@ -160,7 +160,7 @@ p {
 /*---------- BANNER ----------*/
 
 .banner {
-  background: url(https://flipwallpapers.com/wallpapers/anime-wallpapers-background-For-desktop-Wallpaper.jpg) no-repeat fixed 50% 0;
+  background: url(https://images.alphacoders.com/723/723873.png) no-repeat fixed ;
   height: 22em;
   position: relative;
   overflow: hidden;
@@ -190,7 +190,7 @@ footer {
 }
 
 
-footer{background:#DF7401;text-align:center;}
+footer{background:#E5125F;text-align:center;}
 footer a{color:#fff;text-decoration:none; display:inline-block}
 
 @media only screen and (max-width : 769px) {
@@ -201,7 +201,6 @@ padding: 50px;
 color: #fff;
 }
 
-/* djizbhdozbdozebdozebdoezbdozebdzboed */
 
 .card {
   margin: .625rem;
